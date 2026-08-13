@@ -1,0 +1,13 @@
+name: Static site export
+version: 1
+on:
+  - manual
+env: {}
+setup: {}
+steps:
+  - name: Export client app
+    uses: next-static-export
+    with:
+      deployUrl: cdn
+      outputDir: out
+      envVars: {}
